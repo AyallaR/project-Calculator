@@ -1,0 +1,28 @@
+.container {
+  display: grid;
+  grid-template-columns: 2fr 5fr 2fr;
+  grid-template-areas: "m " "h " "s ";
+  width: 100vw;
+  height: 100vh;
+  border: black solid;
+}
+
+.history {
+  grid-area: h;
+  background-color: #b368f5;
+  border: black solid;
+}
+
+.main {
+  grid-area: m;
+  background-color: #68d4f5;
+  border: black solid;
+}
+
+.scientific {
+  grid-area: s;
+  background-color: #7ff568;
+  border: rgb(98, 86, 86) solid;
+}
+
+/*# sourceMappingURL=style.css.map */
