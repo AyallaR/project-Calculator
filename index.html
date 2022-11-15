@@ -3,59 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <link rel="icon"
-        href="https://emoji-uc.akamaized.net/orig/83/a99be950a8b11427dbe097e0e1f6c2.png"
-    	type="image/x-icon">
+        href="https://emojiguide.org/images/emoji/f/1608mt4q1qpwf.png"
+      type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
     <title>Calculator</title>
+
 </head>
 <body>
-    <div class="calculator">
-
-        <div id="history">1</div>
-
-        <div id="main">
-            <div id="row">
-                <button value="info">🛈</div>
-                <div id="title">My Calculator</div>
-                <button value="config">⚙️</button>
-            </div>
-            <div id="row">
-                <button value="info">info</button>
-                <div id="title">My Calculator</div>
-                <button value="config">config buttonn</button>
-            </div>
-            <div id="row">
-                <button value="light">🔦</button>
-                <div id="get-result"></div>
-                <button value="erase">🔙</button>
-            </div>
-            <div id="row">
-                <button value="history-panel">history 👀</button>
-                <input id="re" type="reset" value="reset" />C</label>
-                <button value="/" class="operator">/</button>
-            </div>
-            <div id="row">
-                <button value="sci-mode">Scien-📈</button>
-                <button value="7">7</button>
-                <button value="8">8</button>
-                <button value="9">9</button>
-                <button value="*" class="operator">*</button>
-            </div>
-            <div id="row">
-                <button value="api-mode">Api-mode</button>
-                <button value="4">4</button>
-                <button value="5">5</button>
-                <button value="9">6</button>
-                <button value="*" class="operator">*</button>
-            </div>
-
+    <div class="container">
+        <div class="history"></div>
+        <div class="main">
+            <button  id="info" value="info" onclick="info()">🛈</button>
+            <button id="tit" class="colspan" disabled>My Calculator</button>
+            <button id="config" value="config" onclick="displayButtonInfo(value)">⚙️</button>
+            <button id="lightTheme" value="lightTheme" aria-pressed="false">🔦</button>
+            <input type="text" id="screen" class="colspan">
+            <button id="erase" value="erase" onclick="displayButtonInfo(value)">🔙</button>
+            <button id="history-panel" value="history-panel" onclick="displayButtonInfo(value)">👀</button>
+            <button id="clear" value="reset" class="colspan" onclick="displayButtonInfo()">C</button>
+            <button id="divide" value="/" class="operator" onclick="displayButtonInfo(value)">➗</button>
+            <button id="sci-mode" value="sci-mode" onclick="displayButtonInfo(value)">&#402;</button>
+            <button id="7" class="num" onclick="displayButtonInfo(id)">7</button>
+            <button id="8" class="num" onclick="displayButtonInfo(id)">8</button>
+            <button id="9" class="num" onclick="displayButtonInfo(id)">9</button>
+            <button id="x" class="operator" onclick="displayButtonInfo(id)">✖</button>
+            <button id="api-mode" onclick="displayButtonInfo(id)">Api-mode👩🏻‍💻</button>
+            <button id="4" class="num" onclick="displayButtonInfo(id)">4</button>
+            <button id="5" class="num" onclick="displayButtonInfo(id)">5</button>
+            <button id="6" class="num" onclick="displayButtonInfo(id)">6</button>
+            <button id="-" class="operator" onclick="displayButtonInfo(id)">➖</button>
+            <button disabled>:)</button>
+            <button id="1" class="num" onclick="displayButtonInfo(id)">1</button>
+            <button id="2" class="num" onclick="displayButtonInfo(id)">2</button>
+            <button id="3" class="num" onclick="displayButtonInfo(id)">3</button>
+            <button id="+" class="operator" onclick="displayButtonInfo(id)">➕</button>
+            <button disabled class="empty"></button>
+            <button id="+/-" class="operator" onclick="displayButtonInfo(id)">±</button>
+            <button id="0" class="num" onclick="displayButtonInfo(id)">0</button>
+            <button id="." class="decimal" onclick="displayButtonInfo(id)">•</button>
+            <button id="=" class="equal" onclick="displayButtonInfo(id)">=</button>
         </div>
         <div id="scientific">3</div>
-
-
-
     </div>
-    
+    <script src="./js/application.js"></script>  
 </body>
 </html>
