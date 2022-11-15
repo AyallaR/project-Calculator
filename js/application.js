@@ -5,3 +5,11 @@ function info() {
  function displayButtonInfo(value) {
     alert(value);
  }
+ 
+ //toggle between lights
+
+ function mode() {
+    var element = document.body;
+    element.classList.toggle("dark-mode");
+
+ }

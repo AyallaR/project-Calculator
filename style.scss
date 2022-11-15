@@ -3,6 +3,8 @@
     margin: 0;
     box-sizing: border-box;
   }
+
+
 .container {
     display: grid;
     grid-template-columns:2fr 5fr 2fr;
@@ -13,9 +15,10 @@
     font-size: x-large;
   }
 
-#scientific {
+.scientific {
     grid-area: s;
-    background-color: #cafebf;
+    background-color: #dffed9;
+    
   }
 
 .history {
@@ -47,4 +50,15 @@
 button{
     font-weight: bold;
     font-size: xx-large;
+}
+
+.dark-mode {
+  * {
+    background-color: rgb(43, 40, 40);
+    color: white;
+    border-color: white;
+  }
+  *:hover{
+    background-color: rgb(61, 88, 88);
+  }
 }

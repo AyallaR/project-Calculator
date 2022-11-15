@@ -11,13 +11,13 @@
 
 </head>
 <body>
-    <div class="container">
+    <div class="container" id="container">
         <div class="history"></div>
         <div class="main">
             <button  id="info" value="info" onclick="info()">🛈</button>
             <button id="tit" class="colspan" disabled>My Calculator</button>
             <button id="config" value="config" onclick="displayButtonInfo(value)">⚙️</button>
-            <button id="lightTheme" value="lightTheme" aria-pressed="false">🔦</button>
+            <button id="lightTheme" value="lightTheme" onclick="mode()">🔦</button>
             <input type="text" id="screen" class="colspan">
             <button id="erase" value="erase" onclick="displayButtonInfo(value)">🔙</button>
             <button id="history-panel" value="history-panel" onclick="displayButtonInfo(value)">👀</button>
@@ -44,8 +44,9 @@
             <button id="." class="decimal" onclick="displayButtonInfo(id)">•</button>
             <button id="=" class="equal" onclick="displayButtonInfo(id)">=</button>
         </div>
-        <div id="scientific">3</div>
+        <div class="scientific">sc</div>
     </div>
-    <script src="./js/application.js"></script>  
+<script src="./js/application.js"></script>  
+<script src="./js/calculator.js"></script>
 </body>
 </html>
